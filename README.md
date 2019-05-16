@@ -1,5 +1,5 @@
 # om-s3_youtube
-Python code to migrate sessions from a Granicus S3 archive into YouTube and Open.Media
+Python code to migrate sessions from a Granicus S3 archive into YouTube and Open.Media. These scripts are currently used internally at Open.Media and many of the dependencies (db, service, etc) are not included in this repository.
 
 1) Create a new folder with appropriate data files in client data folder
 
