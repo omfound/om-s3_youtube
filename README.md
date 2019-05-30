@@ -17,7 +17,11 @@ Python code to migrate sessions from a Granicus S3 archive into YouTube and Open
 
 8) Optionally select distinct session_folder from clients imported sessions in MySQL and determine folder labels. You can use this to create a granicus_folders file in the client_data folder. Look at some of the other folders for an example. After creating the file rollback and run the harvest again.
 
-9) Run s3_youtube.py to push videos to YouTube
+9) Run s3_youtube.py to push videos to YouTube 
+To see options use --help with email address: python3 s3_youtube.py --email=glendaleca@openmediafoundation.org --help
+I always start with migrating a single video to see how it works, after that it is generally best to migrate one category at a time
+Example of limiting by folder/category id: python3 s3_youtube.py --email=glendaleca@openmediafoundation.org --folders=10 --limit=10 --verbose
+
 
 10) Run granicus_s3_harvest_docs.py to pull down agendas and minutes
 
